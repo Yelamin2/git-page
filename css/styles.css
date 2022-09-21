@@ -16,6 +16,17 @@ section {
     
 }
 
+button {
+    border-radius: 5px;
+    background-color:white;
+    align-items: center;
+    justify-items: center;
+
+}
+select{
+    float: right;
+}
+
 header {
     position:relative;
     width: 100%;
