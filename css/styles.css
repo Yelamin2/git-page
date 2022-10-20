@@ -64,6 +64,7 @@ ul {
     list-style: none;
     flex-direction: row;
     align-items:center;
+    margin-top: 7px;
 }
 
 ul.lower-menu {
@@ -98,6 +99,11 @@ ul.info-li {
 .profile-repo{
 
     margin-left: 10%;
+}
+
+.repo-search{
+    display: flex;
+    align-items: center;
 }
 
 .profile-info {
@@ -140,7 +146,7 @@ img{
     width: 600px;
 }
 
-.fa-square-github {
+.onhead {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
 }
