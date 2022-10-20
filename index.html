@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"> </script>
@@ -25,10 +25,12 @@
     <header>
         <div class="menu" >  <div>
             <ul>
-                <li><a href="">Pull request</a></li>
-                <li><a href="">Issues</a></li>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Explore</a></li>
+                <li><a href="https://github.com/" class="text-white text-decoration-none"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><input type="search" class="form-control" id="specificSizeInputName" name="" id="search"></a></li>
+                <li><a href="https://github.com/pulls" class="text-white text-decoration-none">Pull request</a></li>
+                <li><a href="https://github.com/issues" class="text-white text-decoration-none">Issues</a></li>
+                <li><a href="https://github.com/marketplace" class="text-white text-decoration-none">Marketplace</a></li>
+                <li><a href="https://github.com/explore" class="text-white text-decoration-none">Explore</a></li>
             </ul>
         </div>
     </div>
@@ -40,12 +42,12 @@
             <div class="small-picture"></div>
             <div></div>
             <div>
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-book-open"></i>Overview</a></li>
-                    <li><a href="">Repositories</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href=""><i class="fa-solid fa-cube"></i>Packages</a></li>
-                    <li><a href=""><i class="fa-regular fa-star"></i>Stars</a></li>
+                <ul class="lower-menu">
+                    <li><a href="https://github.com/Yelamin2" class="text-dark text-decoration-none"><i class="fa-solid fa-book-open"></i>Overview</a></li>
+                    <li><a href="https://github.com/Yelamin2?tab=repositories" class="text-dark text-decoration-none">Repositories</a></li>
+                    <li><a href="https://github.com/Yelamin2?tab=projects" class="text-dark text-dark text-decoration-none">Projects</a></li>
+                    <li><a href="https://github.com/Yelamin2?tab=packages" class="text-dark text-decoration-none"><i class="fa-solid fa-cube"></i>Packages</a></li>
+                    <li><a href="https://github.com/Yelamin2?tab=stars" class="text-dark text-decoration-none"><i class="fa-regular fa-star"></i>Stars</a></li>
                 </ul>
             </div>
           
@@ -70,73 +72,59 @@
                 <div class="col-12 col-md-8 repos-main">
                     <div class="row repo-search">
                         <div class="col-7">
-                            <input type="search" name="" id="search">
+                            <input type="search" class="form-control" id="specificSizeInputName" name="" id="search">
                         </div>
-                        <div class="col-4">
+                        <div class="col-3">
 
                             <ul>
                                 
-                                <button>Type
-                                    <select name="" id="Select type">
-                                        <li>All</li>
-                                        <li>Public</li>
-                                        <li>Private</li>
-                                        <li>Sources</li>
-                                        <li>Forks</li>
-                                        <li>Archived</li>
-                                        <li>Mirrors</li>
-                                        <li>Templates</li>
-                                    </select>
-                                </button>
-                                <button> Language
-                                    <select name="Language" id="Select language" >
-                                        <ul>
-                                            <li>All</li>
-                                            <li>JavaScript</li>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                        </ul>
-                                    </select>
-                                </button>
-                                <button>Sort
-                                    <select name="" id="">
-                                    <ul>
-                                        <li>Last updated</li>
-                                        <li>Name</li>
-                                        <li>Stars</li>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Type
+                                    </button>    
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">All</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Public</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Private</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item" >Sources</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Forks</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Archived</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Mirrors</li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item">Templates</li>
                                     </ul>
-                                    </select>
-                                </button>
-                                <button>New</button>
-                                
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Language
+                                    </button>    
+                                    <ul class="col-6 dropdown-menu">
+                                        <li class="dropdown-item">All</li>
+                                        <li class="dropdown-item">JavaScript</li>
+                                        <li class="dropdown-item">HTML</li>
+                                        <li class="dropdown-item">CSS</li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Sort
+                                    </button>  
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item">Last updated</li>
+                                            <li class="dropdown-item">Name</li>
+                                            <li class="dropdown-item">Stars</li>
+                                        </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">New</button>
                             </ul>
                         </div>
                     </div>
-                    <div class="row repo" id="catcher">
-                        <div class="row repo-info" id="repos1">
-                            <a href="{{homepage}}" class="files">{{name}}</a>
-                            <button><i class="fa-regular fa-star"></i>Star<select>
-                                <ul class="li starlist">Future ideas</ul>
-                                <ul class="li starlist">My Stack</ul>
-                                <ul class="li starlist">Inspiration</ul>
-                                <ul class="li starlist">Create list</ul>
-                            </select></button>
-                        </div>
-                        <div class="row">
-                            <ul>
-                                <li>{{language}}</li>
-                                <li>{{updated}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row repositories">js-war-game</div>
-                    <div class="row repo"></div>
-                    <div class="row repo"></div>
-                    <div class="row repo3"></div>
-                    <div class="row repo"></div>
-                    <div class="row repo"></div>
-                    <div class="row repo"></div>
-                    <div class="row repo"></div>
+                    
+                    <div class="row repositories"></div>
+                   
 
                 </div>
             </div>
@@ -147,20 +135,37 @@
           <div class="row item">
             <script id="git-template" type="text/x-handlebars-template">
                {{#each repos}}
-               <div class="row repo-info" id="repos1">
-                <a href="{{html_url}}" class="files">{{name}}</a>
-                <button><i class="fa-regular fa-star"></i>Star<select>
-                    <ul class="li starlist">Future ideas</ul>
-                    <ul class="li starlist">My Stack</ul>
-                    <ul class="li starlist">Inspiration</ul>
-                    <ul class="li starlist">Create list</ul>
-                </select></button>
+               <div class="col-8 repo-info-separator">
+                <div class="row repo-info " id="repos1">
+                <a href="{{html_url}}" class="files text-decoration-none fw-bold ">{{name}}&nbsp&nbsp&nbsp<span class="badge rounded-pill text-bg-light border">{{visibility}}</span></a>
+                
+                
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li><hr class="divider"></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline info-li">
+                        <li class="list-inline-item">{{language}}</li>
+                        <li class="list-inline-item">{{forks_count}}</li>
+                        <li class="list-inline-item " >Updated {{updated_at}}</li>
+                    </ul>
+                </div>
             </div>
-            <div class="row">
-                <ul>
-                    <li>{{language}}</li>
-                    <li>{{updated}}</li>
-                </ul>
+            <div class="col-3 repo-info-separator ">
+                <div class = "btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Star</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" >Future ideas</li>
+                        <li class="dropdown-item" >My Stack</li>
+                        <li class="dropdown-item" >Inspiration</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-item">+ Create list</li>
+                    </ul>
+                </div>
+                   
             </div>
                      {{/each}}  
                
@@ -176,18 +181,18 @@
     <footer>
         <div class="footer-links">
             <ul>
-                <li><i class="fa-brands fa-github"> © GiHub, Inc</i></li>
-                <li><a href="" >Terms</a></li>
-                <li><a href="" >Privacy</a></li>
-                <li><a href="" >Security</a></li>
-                <li><a href="" >Status</a></li>
-                <li><a href="" >Docs</a></li>
-                <li><a href="" >Conact GitHub</a></li>
-                <li><a href="" >Pricing</a></li>
-                <li><a href="" >API</a></li>
-                <li><a href="" >Training</a></li>
-                <li><a href="" >Blog</a></li>
-                <li><a href="" >About</a></li>
+                <li><a href="https://github.com/" ><i class="fa-brands fa-github"> © GiHub, Inc</i></a></li>
+                <li><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" >Terms</a></li>
+                <li><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" >Privacy</a></li>
+                <li><a href="https://github.com/security" >Security</a></li>
+                <li><a href="https://www.githubstatus.com/" >Status</a></li>
+                <li><a href="https://docs.github.com/" >Docs</a></li>
+                <li><a href="https://support.github.com/?tags=dotcom-footer" >Conact GitHub</a></li>
+                <li><a href="https://github.com/pricing" >Pricing</a></li>
+                <li><a href="https://docs.github.com/" >API</a></li>
+                <li><a href="https://services.github.com/" >Training</a></li>
+                <li><a href="https://github.blog/" >Blog</a></li>
+                <li><a href="https://github.com/about" >About</a></li>
             </ul>
         </div>
 
@@ -196,7 +201,7 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./main.js" ></script>
+    <script src="./js/main.js" ></script>
     <!-- <script src="js/repos.js" ></script> -->
 </body>
 </html>

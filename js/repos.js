@@ -1,8 +1,5 @@
 
-
-// (function(){
-  //  'use strict';
-  const project = [
+const project = [
     {
       "id": 530673011,
       "node_id": "R_kgDOH6Ftcw",
@@ -1114,35 +1111,4 @@
       "watchers": 0,
       "default_branch": "main"
     }
-  ];
-
-    const source =document.querySelector('#git-template').innerHTML;
-    const template= Handlebars.compile(source);
-    // template is a function
-
-    const context = project.map(function(item){
-        return item;
-    });
-
-   
-    
-   const html = template({repos: context});
-   
-    
-    console.log(html);
-
-    document.querySelector(".repositories").insertAdjacentHTML('afterbegin', html);
-    
- 
-
-
-
-//    var projectname=project.map(function(item){
-//      return item.name;
-//    })
-
-
-// console.log(projectname);
-
-
-// })();
+  ]

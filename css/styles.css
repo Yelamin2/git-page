@@ -63,10 +63,37 @@ ul {
     display:flex;
     list-style: none;
     flex-direction: row;
+    align-items:center;
+}
+
+ul.lower-menu {
+    justify-content: center;
 }
 
 li{
     margin-left: 20px;
+}
+
+.dropdown-item{
+    margin:0px;
+    text-align:left;
+    padding-left: 20px;
+    line-height: 15px;
+}
+
+.dropdown-divider{
+    margin-left: -20px;
+    padding: 0px;
+    
+}
+
+ul.info-li {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: black;
+
+
 }
 .profile-repo{
 
@@ -97,6 +124,12 @@ li{
     width: 300px;
 }
 
+.form-control{
+    padding: 0.2em 0.5rem;
+    line-height: 00.5rem;
+}
+
+
 img{
    
     border-radius: 100%;
@@ -105,4 +138,9 @@ img{
 
 #search {
     width: 600px;
+}
+
+.fa-square-github {
+    font-weight: 400;
+    font-size: 40px;
 }
