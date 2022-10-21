@@ -130,52 +130,6 @@
             </div>
         </div>
 
-       
-        
-          <div class="row item">
-            <script id="git-template" type="text/x-handlebars-template">
-               {{#each repos}}
-               <div class="col-8 repo-info-separator">
-                <div class="row repo-info " id="repos1">
-                <a href="{{html_url}}" class="files text-decoration-none fw-bold ">{{name}}&nbsp&nbsp&nbsp<span class="badge rounded-pill text-bg-light border">{{visibility}}</span></a>
-                
-                
-                </div>
-                <div class="row">
-                    <ul class="list-unstyled">
-                        <li><hr class="divider"></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <ul class="list-inline info-li">
-                        <li class="list-inline-item">{{language}}</li>
-                        <li class="list-inline-item">{{forks_count}}</li>
-                        <li class="list-inline-item " >Updated {{updated_at}}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-3 repo-info-separator ">
-                <div class = "btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Star</button>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item" >Future ideas</li>
-                        <li class="dropdown-item" >My Stack</li>
-                        <li class="dropdown-item" >Inspiration</li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-item">+ Create list</li>
-                    </ul>
-                </div>
-                   
-            </div>
-                     {{/each}}  
-               
-                       
-            </script>
-                        
-            </div>
-            
-    
-
     </section>
 
     <footer>
@@ -199,6 +153,49 @@
 
     </footer>
     
+
+
+
+    <script id="git-template" type="text/x-handlebars-template">
+        {{#each repos}}
+        <div class="col-8 repo-info-separator">
+         <div class="row repo-info " id="repos1">
+         <a href="{{html_url}}" class="files text-decoration-none fw-bold ">{{name}}&nbsp&nbsp&nbsp<span class="badge rounded-pill text-bg-light border">{{visibility}}</span></a>
+         
+         
+         </div>
+         <div class="row">
+             <ul class="list-unstyled">
+                 <li><hr class="divider"></li>
+             </ul>
+         </div>
+         <div class="row">
+             <ul class="list-inline info-li">
+                 <li class="list-inline-item">{{language}}</li>
+                 <li class="list-inline-item">{{forks_count}}</li>
+                 <li class="list-inline-item " >Updated {{updated_at}}</li>
+             </ul>
+         </div>
+     </div>
+     <div class="col-3 repo-info-separator ">
+         <div class = "btn-group">
+             <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Star</button>
+             <ul class="dropdown-menu">
+                 <li class="dropdown-item" >Future ideas</li>
+                 <li class="dropdown-item" >My Stack</li>
+                 <li class="dropdown-item" >Inspiration</li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li class="dropdown-item">+ Create list</li>
+             </ul>
+         </div>
+            
+     </div>
+              {{/each}}  
+        
+                
+     </script>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js" ></script>
